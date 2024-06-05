@@ -1,0 +1,25 @@
+{
+    "bins": [
+        {
+            "bin_name": "Antarctic Peninsula",
+            "reasoning": "Species found primarily around the Antarctic Peninsula region might be classified here due to their geographical distribution. The Antarctic Peninsula is known for slightly warmer temperatures and different prey availability which can affect the species residing in the area",
+            "pred": {
+                "field": "Species",
+                "oneOf": [
+                    "Gentoo"
+                ]
+            }
+        },
+        {
+            "bin_name": "Sub Antarctic Islands",
+            "reasoning": "Species that are more commonly found around the sub Antarctic islands, which have a colder and harsher environment compared to the Antarctic Peninsula, are classified here. These islands provide different breeding sites and feeding grounds which are ideal for different penguin species",
+            "pred": {
+                "field": "Species",
+                "oneOf": [
+                    "Adelie",
+                    "Chinstrap"
+                ]
+            }
+        }
+    ]
+}

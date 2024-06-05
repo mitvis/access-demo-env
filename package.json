@@ -1,0 +1,76 @@
+{
+  "name": "umwelt",
+  "version": "0.1.0",
+  "private": true,
+  "homepage": "https://mitvis.github.io/umwelt",
+  "dependencies": {
+    "@json-editor/json-editor": "^2.9.1",
+    "@testing-library/jest-dom": "^5.14.1",
+    "@testing-library/react": "^13.0.0",
+    "@testing-library/user-event": "^13.2.1",
+    "@types/jest": "^27.0.1",
+    "@types/json-schema": "^7.0.11",
+    "@types/node": "^16.7.13",
+    "@types/react": "^18.0.0",
+    "@types/react-dom": "^18.0.0",
+    "compassql": "^0.21.2",
+    "dayjs": "^1.11.7",
+    "exponential-backoff": "^3.1.1",
+    "fast-cartesian": "^8.0.0",
+    "jsonc-simple-parser": "^3.0.0",
+    "lodash.isequal": "^4.5.0",
+    "lz-string": "^1.5.0",
+    "moize": "^6.1.6",
+    "olli": "file:../olli/packages/core",
+    "olli-adapters": "^2.0.1",
+    "openai": "^3.2.1",
+    "react": "^18.2.0",
+    "react-debounce-component": "^1.0.0",
+    "react-dom": "^18.2.0",
+    "react-router-dom": "^6.15.0",
+    "react-scripts": "5.0.1",
+    "react-simple-keyboard": "^3.4.133",
+    "react-usestateref": "^1.0.8",
+    "throttle-debounce": "^5.0.0",
+    "tone": "^14.7.77",
+    "typescript": "^4.4.2",
+    "vega": "^5.22.1",
+    "vega-lite": "^5.6.0",
+    "vega-selections": "file:../vega/packages/vega-selections",
+    "vega-statistics": "^1.8.1",
+    "web-vitals": "^2.1.0"
+  },
+  "scripts": {
+    "start": "ESLINT_NO_DEV_ERRORS=true react-scripts start",
+    "build": "react-scripts build",
+    "test": "react-scripts test",
+    "eject": "react-scripts eject",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build",
+    "schema": "npx ts-json-schema-generator --path './src/grammar/Types.ts' --type 'UmweltSpec' --tsconfig './tsconfig.json' -o './src/grammar/schema/umwelt.schema.json'"
+  },
+  "eslintConfig": {
+    "extends": [
+      "react-app",
+      "react-app/jest"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version"
+    ]
+  },
+  "devDependencies": {
+    "eslint": "^8.40.0",
+    "eslint-plugin-react": "^7.32.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "gh-pages": "^5.0.0"
+  }
+}

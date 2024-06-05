@@ -1,0 +1,31 @@
+{
+    "bins": [
+        {
+            "bin_name": "Lean",
+            "reasoning": "Representing penguins in the lighter end, which tend to be younger or perhaps feed in less nutrient-rich waters",
+            "pred": {
+                "field": "Body Mass (g)",
+                "lt": 3500
+            }
+        },
+        {
+            "bin_name": "Optimal",
+            "reasoning": "Represents those penguins which fall within a healthy and common weight range for adult penguins, potentially indicating good feeding conditions and health",
+            "pred": {
+                "field": "Body Mass (g)",
+                "range": [
+                    3500,
+                    5000
+                ]
+            }
+        },
+        {
+            "bin_name": "Hefty",
+            "reasoning": "Penguins that are heavier than the average, which could indicate particularly successful feeding or might be found more commonly in certain species",
+            "pred": {
+                "field": "Body Mass (g)",
+                "gte": 5001
+            }
+        }
+    ]
+}

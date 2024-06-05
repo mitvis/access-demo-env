@@ -1,0 +1,31 @@
+{
+    "bins": [
+        {
+            "bin_name": "Short",
+            "reasoning": "Flipper lengths in this range might be associated with slower swimming but greater maneuverability, typically found in species navigating through densely packed ice or prey-rich waters where agility trumps speed",
+            "pred": {
+                "field": "Flipper Length (mm)",
+                "lte": 190
+            }
+        },
+        {
+            "bin_name": "Medium",
+            "reasoning": "These lengths indicate a balanced morphology, potentially offering a mix of agility and speed. Penguins with these flipper lengths possibly exploit a wider range of ecological niches, from open water hunting to maneuvering in more restricted spaces",
+            "pred": {
+                "field": "Flipper Length (mm)",
+                "range": [
+                    191,
+                    210
+                ]
+            }
+        },
+        {
+            "bin_name": "Long",
+            "reasoning": "Long flippers are typically indicative of species that prioritize speed over maneuverability, suggesting an adaptation to open water hunting where they can utilize their speed to chase down faster prey",
+            "pred": {
+                "field": "Flipper Length (mm)",
+                "gte": 211
+            }
+        }
+    ]
+}
