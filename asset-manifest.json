@@ -1,0 +1,13 @@
+{
+  "files": {
+    "main.css": "/access-demo-env/static/css/main.7ad8436b.css",
+    "main.js": "/access-demo-env/static/js/main.d773411a.js",
+    "index.html": "/access-demo-env/index.html",
+    "main.7ad8436b.css.map": "/access-demo-env/static/css/main.7ad8436b.css.map",
+    "main.d773411a.js.map": "/access-demo-env/static/js/main.d773411a.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.7ad8436b.css",
+    "static/js/main.d773411a.js"
+  ]
+}
