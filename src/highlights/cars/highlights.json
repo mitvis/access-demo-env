@@ -1,0 +1,85 @@
+[
+    {
+        "name": "High Horsepower American Cars",
+        "explanation": "This group includes cars with high horsepower, indicating performance and possibly sportiness, which are often associated with American automotive culture.",
+        "predicate": {
+            "and": [
+                {
+                    "field": "Horsepower",
+                    "gt": 200
+                },
+                {
+                    "field": "Origin",
+                    "equal": "USA"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Fuel Efficient Japanese Cars",
+        "explanation": "This group represents cars from Japan that are known for their fuel efficiency, reflecting Japanese automotive engineering and consumer trends towards sustainable driving.",
+        "predicate": {
+            "and": [
+                {
+                    "field": "Miles_per_Gallon",
+                    "gte": 25
+                },
+                {
+                    "field": "Origin",
+                    "equal": "Japan"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Low Horsepower European Cars",
+        "explanation": "This group highlights cars from Europe with lower horsepower, often focusing on economy, practicality, and urban commuting.",
+        "predicate": {
+            "and": [
+                {
+                    "field": "Horsepower",
+                    "lte": 70
+                },
+                {
+                    "field": "Origin",
+                    "equal": "Europe"
+                }
+            ]
+        }
+    },
+    {
+        "name": "Performance versus Fuel Economy",
+        "explanation": "This group contrasts cars focusing on high performance (higher horsepower) against those prioritized for fuel economy (higher MPG), indicative of consumer choices based on economic conditions and environmental awareness.",
+        "predicate": {
+            "and": [
+                {
+                    "field": "Horsepower",
+                    "gt": 150
+                },
+                {
+                    "field": "Miles_per_Gallon",
+                    "lte": 20
+                }
+            ]
+        }
+    },
+    {
+        "name": "Trends in American Car Efficiency",
+        "explanation": "This group focuses on American cars that have a wide range of fuel efficiency, reflecting changing trends in designs toward more eco-friendly options without compromising performance.",
+        "predicate": {
+            "and": [
+                {
+                    "field": "Origin",
+                    "equal": "USA"
+                },
+                {
+                    "field": "Miles_per_Gallon",
+                    "range": [
+                        15,
+                        30
+                    ]
+                }
+            ]
+        }
+    }
+]
